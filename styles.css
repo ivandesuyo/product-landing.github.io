@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(232, 27, 27);
+  font-family: 'Inter', sans-serif;
+}
+
+#page-wrapper{
+  position: relative;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(232, 27, 27);
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+@media(max-width: 600px){
+  #header{
+    flex-wrap: wrap;
+  }
+}
+
+.logo{
+  width: 60vw;
+}
+
+@media(max-width: 650px){
+  .logo{
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img{
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+@media(max-width: 650px){
+  .logo > img{
+    margin: 0 auto;
+  }
+}
+
+nav li{
+  font-weight: bold;
+  padding-top: 55px;
+  list-style: none;
+}
+
+@media(max-width: 650px) {
+  nav{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  nav li{
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media(max-width: 650px){
+  nav > ul{
+    flex-direction: column;
+  }
+}
+
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 140px;  
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  font-size: 45px;
+}
+
+#hero input[type='email']{
+  width: 275px;
+  margin-top: 15px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(0,0,0);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+::placeholder, input{
+    color: white;
+  }
+
+#hero input[type='submit']{
+  max-width: 120px;
+  width: 100%;
+  margin-top: 7px;
+  padding: 3px;
+  background-color: rgba(0,0,0);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.button{
+  border: 3px black solid;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 650px){
+  #hero{
+    margin-top: 120px;
+  }
+}
+
+.grid {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 230px;
+  width: 100%;
+  padding: 30px;
+  border: 3px black solid;
+}
+
+#features{
+  padding-bottom: 45%;
+}
+
+#features h3{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+
+#features li{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media(max-width: 550px){
+  #features li{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media(max-width: 650px){
+  #features {
+    margin-top: 0;
+  }
+}
+
+#how-it-works{
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe{
+  margin-top: -40%;
+  max-width: 700px;
+  width: 100%;
+}
+
+#pricing{
+  margin-top: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 3px solid #000;
+  border-radius: 3px;
+}
+
+.product li{
+  list-style: none;
+}
+
+.product .level{
+  background-color: black;
+  color: rgb(232, 27, 27);
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bold;
+}
+
+.product h2{
+  margin-top: 15px;
+}
+
+.product ol{
+  margin: 15px 0;
+}
+
+.product > ol > li{
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.product button{
+  border: 0;
+  margin: 15px 0;
+  padding: 5px;
+  background-color: black;
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(232, 27, 27);
+  border-radius: 16px;
+}
+
+.product > button:hover {
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+footer{
+  margin-top: 30px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -10px;
+}
+
+footer > ul > li{
+  padding: 0 10px;
+  list-style: none;
+}
+
+footer > ol{
+  padding: 0 10px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  position:relative;
+  bottom: 48px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
